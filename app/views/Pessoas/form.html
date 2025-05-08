@@ -1,7 +1,7 @@
 #{extends 'main.html' /}
 #{set title:'Formulário' /}
 
-<div class="container">
+
 <h1>Cadastro de pessoa</h1>
    
   <form action="/pessoas/salvar">
@@ -19,14 +19,19 @@
       <td><input type="text" class="form-control" name="pessoa.email" placeholder="Email"></td>
     </div>
     </tr>
-    <tr>
-      <th><button type="submit" class="btn btn-primary">Cadastrar</button></th>
-      <td><p><a href="/pessoas/detalhar">Detalhamento</a></p></td>
+    
+  </tbody>
+  <tbody>
+	<tr>
+      <th>
+		<button type="submit" class="btn btn-primary">Cadastrar</button>
+		<button type="submit" class="btn btn-primary"><a href="@{Pessoas.listar}">Listar</a></button>
+		<button type="submit" class="btn btn-primary"><a href="/pessoas/detalhar">Detalhamento</a></button>
+	  </th>
     </tr>
   </tbody>
 </table>
   </form>
-</div>
 
 
  
