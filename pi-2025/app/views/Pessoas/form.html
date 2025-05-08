@@ -1,0 +1,32 @@
+#{extends 'main.html' /}
+#{set title:'Formulário' /}
+
+<div class="container">
+<h1>Cadastro de pessoa</h1>
+   
+  <form action="/pessoas/salvar">
+  <table class="table table-dark">
+  <tbody>
+     <tr>
+     <div class="form-group">
+      <th scope="row"><label for="exampleInputEmail1">Nome:</label></th>
+      <td><input type="text" class="form-control" name="pessoa.nome" placeholder="Nome"></td>
+     </div>
+    </tr>
+    <tr>
+    <div class="form-group">
+      <th scope="row"><label>Email</label></th>
+      <td><input type="text" class="form-control" name="pessoa.email" placeholder="Email"></td>
+    </div>
+    </tr>
+    <tr>
+      <th><button type="submit" class="btn btn-primary">Cadastrar</button></th>
+      <td><p><a href="/pessoas/detalhar">Detalhamento</a></p></td>
+    </tr>
+  </tbody>
+</table>
+  </form>
+</div>
+
+
+ 

@@ -1,0 +1,19 @@
+#{extends 'main.html' /}
+#{set title:'Detalhamento' /}
+
+<div class="container">
+ <h1>Detalhamento de Pessoa</h1>
+   <table class="table table-dark">
+  <tbody>
+    <tr>
+      <th scope="row">Nome:</th>
+      <td><p>${pessoa.nome}</p></td>
+    </tr>
+    <tr>
+      <th scope="row">Email:</th>
+      <td><p>${pessoa.email}</p></td>
+    </tr>
+  </tbody>
+</table>
+ <button type="submit" class="btn btn-primary"><a href="/pessoas/form">Nova Pessoa</a></button>
+</div>
