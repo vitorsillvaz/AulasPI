@@ -1,27 +1,22 @@
 #{extends 'main.html' /}
 #{set title:'Formulário' /}
 
-
-<h1>Cadastro de pessoa</h1>
+  <h1>Cadastro de pessoa</h1>
    
   <form action="/pessoas/salvar">
-  <table class="table ">
-   <tr>
+  
      <div class="form-group">
-      <th scope="row"><label for="exampleInputEmail1">Nome:</label></th>
-      <td><input type="text" class="form-control" name="pessoa.nome" placeholder="Nome"></td>
+      <label for="exampleInputEmail1">Nome:</label>
+      <input type="text" class="form-control" name="pessoa.nome" placeholder="Nome"></td>
      </div>
-    </tr>
-    <tr>
-    <div class="form-group">
-      <th scope="row"><label>Email</label></th>
-      <td><input type="text" class="form-control" name="pessoa.email" placeholder="Email"></td>
-    </div>
-    </tr>
-</table>
-        <button type="submit" class="btn">Cadastrar</button>
-		<button type="submit" class="btn"><a href="@{Pessoas.listar}">Listar</a></button>
-		<button type="submit" class="btn"><a href="/pessoas/detalhar">Detalhamento</a></button>
+     
+     <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" name="pessoa.email" placeholder="Email"></td>
+     </div>
+     
+     <button type="submit" class="btn">Cadastrar</button>
+	 <button type="submit" class="btn"><a href="@{Pessoas.listar}">Listar</a></button>
   </form>
 
 

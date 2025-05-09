@@ -1,19 +1,11 @@
 #{extends 'main.html' /}
 #{set title:'Detalhamento' /}
 
-
- <h1>Detalhamento de Pessoa</h1>
-   <table class="table">
-  <tbody>
-    <tr>
-      <th scope="row">Nome:</th>
-      <td><p>${pessoa.nome}</p></td>
-    </tr>
-    <tr>
-      <th scope="row">Email:</th>
-      <td><p>${pessoa.email}</p></td>
-    </tr>
-  </tbody>
-</table>
- <button type="submit" class="btn "><a href="/pessoas/form">Nova Pessoa</a></button>
+<h1>Detalhamento de Pessoa</h1>
+ <ul>
+  <li><p>Nome: ${pessoa.nome}</p></li>
+  <li><p>Email: ${pessoa.email}</p></li>
+ </ul>
+ 
+ <button type="submit" class="btn "><a href="@{Pessoas.form}">Nova Pessoa</a></button>
  <button type="submit" class="btn "><a href="@{Pessoas.listar}">Listar</a></button>

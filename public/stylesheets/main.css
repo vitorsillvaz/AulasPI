@@ -1,11 +1,13 @@
 .container{
 	color: #ffff;
-	background: #2596be;
+	background: black;
 	padding:20px;
 	border-radius: 20px;
 	margin-top: 15%;
-	text-align: center;
 }
 a{
 	color: black;
+}
+.rem{
+	color: #ffff;
 }

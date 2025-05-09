@@ -1,22 +1,17 @@
 #{extends 'main.html' /}
 #{set title:'Listagem' /}
 
+<h1>Listagem de pessoa</h1>
+<ul>
+ #{list items:lista, as:'p'}
+  <li>
+    <p>${p?.nome} (${p?.email}) | <a href="@{Pessoas.remover(p.id)}" class="rem">REMOVER</a></p>
+  </li>
+ #{/list}
+ #{else}
+  <li> Nenhuma pessoa cadastrada.</br></li>
+#{/else}
+</ul>
 
-<table class="table ">
-   #{list items:lista, as:'p'}
-   <tbody>
-       <tr>
-		 <th>
-		   <p>${p.id}</p> 
-		</th>
-         <td scope="row">
-			<p>
-			 ${p?.nome} (${p?.email}) |
-			 <a href="@{Pessoas.remover(p.id)}">REMOVER</a>
-			</p>
-		 </td>
-       </tr>
-   </tbody>
-    #{/list}
- </table>
- <button type="submit" class="btn"><a href="/pessoas/form">Novo Cadastro</a></button>
+
+ <button type="submit" class="btn"><a href="@{Pessoas.form}">Novo Cadastro</a></button>
