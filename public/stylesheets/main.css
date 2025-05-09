@@ -1,10 +1,11 @@
-.cad{
-	width: 50%;
+.container{
 	color: #ffff;
-	background: black;
+	background: #2596be;
 	padding:20px;
 	border-radius: 20px;
+	margin-top: 15%;
+	text-align: center;
 }
 a{
-	color: #ffff;
+	color: black;
 }

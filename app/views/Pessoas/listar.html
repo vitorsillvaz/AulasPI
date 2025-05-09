@@ -2,12 +2,12 @@
 #{set title:'Listagem' /}
 
 
-<table class="table table-dark">
+<table class="table ">
    #{list items:lista, as:'p'}
    <tbody>
        <tr>
 		 <th>
-		   <p>ID:</p> 
+		   <p>${p.id}</p> 
 		</th>
          <td scope="row">
 			<p>
@@ -19,4 +19,4 @@
    </tbody>
     #{/list}
  </table>
- <button type="submit" class="btn btn-primary"><a href="/pessoas/form">Novo Cadastro</a></button>
+ <button type="submit" class="btn"><a href="/pessoas/form">Novo Cadastro</a></button>
