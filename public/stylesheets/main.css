@@ -1,12 +1,29 @@
+body {
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   justify-content: center; /* Centraliza horizontalmente */
+   align-items: center;     /* Centraliza verticalmente */
+   
+ }
 .container{
 	padding:20px;
 	border-radius: 20px;
-	margin-top: 15%;
 	width: 50%;
+	border: 1px solid;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* sombra cinza suave */
 }
 a{
+	color: #ffff;
+}
+.btn-listar a{
 	color: black;
 }
 .rem{
 	color: red;
+}
+.edi{
+	color: blue;
 }

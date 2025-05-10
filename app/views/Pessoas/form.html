@@ -4,19 +4,20 @@
   <h1>Cadastro de pessoa</h1>
    
   <form action="/pessoas/salvar">
-  
-     <div class="form-group">
+     
+	 <input type="hidden" name="pessoa.id" value="${pe?.id}">
+       <div class="form-group">
       <label for="exampleInputEmail1">Nome:</label>
-      <input type="text" class="form-control" name="pessoa.nome" placeholder="Nome"></td>
+      <input type="text" class="form-control" name="pessoa.nome" value="${pe?.nome}" placeholder="Nome"></td>
      </div>
      
      <div class="form-group">
       <label>Email</label>
-      <input type="text" class="form-control" name="pessoa.email" placeholder="Email"></td>
+      <input type="text" class="form-control" name="pessoa.email" value="${pe?.email}" placeholder="Email"></td>
      </div>
      
      <button type="submit" class="btn btn-info">Cadastrar</button>
-	 <button type="submit" class="btn"><a href="@{Pessoas.listar}">Listar</a></button>
+	 <button type="submit" class="btn btn-listar"><a href="@{Pessoas.listar}">Listar</a></button>
   </form>
 
 
