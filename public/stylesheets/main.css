@@ -1,13 +1,12 @@
 .container{
-	color: #ffff;
-	background: black;
 	padding:20px;
 	border-radius: 20px;
 	margin-top: 15%;
+	width: 50%;
 }
 a{
 	color: black;
 }
 .rem{
-	color: #ffff;
+	color: red;
 }
