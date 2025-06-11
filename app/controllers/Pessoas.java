@@ -27,6 +27,7 @@ public class Pessoas extends Controller {
 	}
 	public static void listar() {
 		List<Pessoa> lista = Pessoa.findAll();
+		
 		render(lista);
 	}
 	public static void remover(long id) {
