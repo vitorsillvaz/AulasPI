@@ -2,6 +2,13 @@
 #{set title:'Listagem' /}
 
 <h1>Listagem de pessoa</h1>
+
+<form action="@{Pessoas.listar}">
+	<label>Buscar por nome ou email:</label>
+	<input type="text" class="form-control" name="termo" value="${termo}" />
+	<button class="btn ">Buscar</button>
+</form>
+
 <ul>
  #{list items:lista, as:'p'}
   <li>

@@ -14,4 +14,8 @@ public class Pessoa extends Model{
  
 	@Enumerated(EnumType.STRING)
 	public Status status;
+	
+	public Pessoa() {
+		this.status = Status.ATIVO;
+	}
 }
